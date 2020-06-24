@@ -1,0 +1,109 @@
+.page-header {
+	background-color: #4ca6f4;
+	margin-top: 0;
+	padding: 20px 20px 20px 40px;
+}
+
+/*
+margin-top is the margin of the whole thing, including the background. If you increase it over 0, the text and the background (color) are moved down.
+* What is that number actually?
+padding is the margin of the text with respect to the background (color). The first element is the top margin, the second element is the right margin,
+the third element is the bottom margin, the fourth element is the left margin. This doesn't move the background (color), it only moves the text inside it.
+*/
+
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+	color: #000000;
+	font-size: 36pt;
+	text-decoration: none;
+}
+
+/*
+color is the color of the text.
+font-size is, naturally, the size of the font.
+* What is the text decoration? What can you do with it?
+* What do all those mean? h1, h1 a, h1 a:visited, h1 a:active
+*/
+
+
+.content {
+	margin-left: 40px;
+}
+
+/*
+* What is that class 'content'? It's not actually defined like that in the HTML. The biggest div is called "content container". Is it supposed to work like that or the class 'content' always exists
+even when it's not explicitly created?
+If the class definition (naming) for "content container" is deleted, then this style doesn't apply anymore.
+
+margin-left is obvious.
+*/
+
+
+h1, h2, h3, h4 {
+	font-family: 'Lobster', cursive;
+}
+
+/*
+h1, h2, h3, h4 makis this declaration block apply the style to all headers.
+* See how other fonts are used.
+* When deleting 'cursive' no 'normal' change is actually seen. When the page is reloaded several times quickly, another font like comic sans appears for a moment, but then the same appears.
+  So, what does 'cursive' actually do?
+*/
+
+
+.date {
+	color: #828282;
+}
+
+/*
+This obviously applies this style to the class 'date'. The color is some sort of gray.
+*/
+
+
+.save {
+	float: right;
+}
+
+/*
+* What the hell is this? There's no visible change when deleted/commented.
+*/
+
+
+.post-form textarea, .post-form input {
+	width: 100%;
+}
+
+/*
+* What the hell is this? There's no visible change when deleted/commented.
+*/
+
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+	color: #ffffff;
+	float: right;
+	font-size: 26pt;
+	margin-right: 20px;
+}
+
+/*
+* What the hell is this? There's no visible change when deleted/commented.
+*/
+
+
+.post {
+	margin-bottom: 70px;
+}
+
+/*
+This style obviously applies to the class 'post'. With the current layout, it affects the distance between the posts.
+*/
+
+
+.post h2 a, .post h2 a:visited {
+	color: #000000;
+}
+
+/*
+This style is only applied to the h2 header(s) in the 'post' class.
+* Still don't know for sure how the 'visited' part works.
+*/
